@@ -27,7 +27,8 @@ h2 {
 /* Define the styles for header component */
 
 .header {
-  background-color: #375c43;
+  /* background-color: #375c43; */
+  background-color: blue;
   padding: 0.1rem 1rem;
   margin: 0;
   color: white;
