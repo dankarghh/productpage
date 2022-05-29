@@ -16,7 +16,7 @@ function Hero() {
           {/* <img src="phone.png" /> */}
         </div>
         <div className="hero__img-container">
-          <img className="hero__img" src="./phone.png" />
+          <img alt="phone" className="hero__img" src="./phone.png" />
         </div>
       </div>
     </section>

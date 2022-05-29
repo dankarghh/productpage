@@ -7,11 +7,11 @@ function Reviews() {
     return (
       <div className="review__wrapper">
         <span className="review__stars">
-          <img src="./starfilled.svg"></img>
-          <img src="./starfilled.svg"></img>
-          <img src="./starfilled.svg"></img>
-          <img src="./starfilled.svg"></img>
-          <img src="./starfilled.svg"></img>
+          <img alt="" src="./starfilled.svg"></img>
+          <img alt="" src="./starfilled.svg"></img>
+          <img alt="" src="./starfilled.svg"></img>
+          <img alt="" src="./starfilled.svg"></img>
+          <img alt="" src="./starfilled.svg"></img>
         </span>
 
         <p>{review.description}</p>
