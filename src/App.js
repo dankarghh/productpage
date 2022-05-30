@@ -11,13 +11,19 @@ import Login from "./components/Login";
 
 function App() {
   const [login, setLogin] = useState(false);
+  const [signUp, setSignUp] = useState(false);
+
+  function handleCloseModal() {
+    setLogin(false);
+    setSignUp(false);
+  }
 
   return (
     <div className="App">
       {login ? (
-        <div className="App-cover" onClick={e => setLogin(false)}></div>
+        <div className="App-cover" onClick={handleCloseModal}></div>
       ) : null}
-      <Login login={login} />
+      <Login login={login} signUp={signUp} setSignUp={setSignUp} />
       <Header setLogin={setLogin} />
       <Hero setLogin={setLogin} />
       <Features />

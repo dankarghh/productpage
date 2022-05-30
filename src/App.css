@@ -286,7 +286,7 @@ section {
   position: absolute;
   left: 50%;
   z-index: 1;
-  top: 30vh;
+  top: 20vh;
   transform: translateX(-50%);
 
   background-color: white;
@@ -299,7 +299,7 @@ section {
   align-items: center;
 }
 .login__input {
-  padding: 0.5rem;
+  padding: 0.7rem;
   margin: 0.5rem;
   border-radius: 5px;
   border: solid 1px grey;
@@ -312,6 +312,8 @@ section {
 .login__heading:last-of-type {
   margin-top: 3rem;
   margin-bottom: 0rem;
+
+  font-size: 1.4rem;
 }
 .hidden {
   display: none;
