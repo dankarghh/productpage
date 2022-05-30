@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <div className="header">
       <div className="header__container">
@@ -13,7 +13,7 @@ export default function Header() {
             <img alt="icon" className="header__icon" src="./pricing.svg"></img>
             <h1 className="header__text">Pricing</h1>
           </div>
-          <div className="header__heading">
+          <div className="header__heading" onClick={e => props.setLogin(true)}>
             <img alt="icon" className="header__icon" src="./login.svg"></img>
             <h1 className="header__text">Login / Signup</h1>
           </div>

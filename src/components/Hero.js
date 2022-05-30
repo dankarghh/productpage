@@ -1,4 +1,4 @@
-function Hero() {
+function Hero(props) {
   return (
     <section className="hero">
       <div className="hero__container">
@@ -12,8 +12,12 @@ function Hero() {
             Never forget to pay that bill, book that service, or miss that
             appointment ever again.
           </p>
-          <button className="btn btn--primary">Sign up Now</button>
-          {/* <img src="phone.png" /> */}
+          <button
+            className="btn btn--primary"
+            onClick={e => props.setLogin(true)}
+          >
+            Sign up Now
+          </button>
         </div>
         <div className="hero__img-container">
           <img alt="phone" className="hero__img" src="./phone.png" />

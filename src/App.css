@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 h1,
@@ -92,6 +93,14 @@ h2 {
   background-color: rgb(75, 97, 75);
   color: white;
 }
+.btn--secondary {
+  background-color: white;
+  color: #30523b;
+  border: solid 2px rgb(75, 97, 75);
+}
+.btn--secondary:hover {
+  background-color: rgba(75, 97, 75, 0.233);
+}
 
 /* Define the styles for hero component */
 .hero {
@@ -119,8 +128,7 @@ h2 {
 }
 
 /* Define the styles for info component */
-.info {
-}
+
 .info__container {
   display: flex;
   align-items: center;
@@ -146,8 +154,6 @@ h2 {
   margin: 0 auto;
   justify-content: center;
   /* background-color: rgba(194, 207, 200, 0.425); */
-}
-.review__container {
 }
 
 .review__initials {
@@ -269,4 +275,47 @@ section {
   .header__text {
     display: none;
   }
+}
+.App-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #4e5f538e;
+}
+.login {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  top: 30vh;
+  transform: translateX(-50%);
+
+  background-color: white;
+  border-radius: 10px;
+}
+.login__form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  align-items: center;
+}
+.login__input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: solid 1px grey;
+  width: 100%;
+  box-sizing: border-box;
+}
+.btn--login {
+  width: 100%;
+}
+.hidden {
+  display: none;
+}
+.login__header {
+  display: flex;
+  justify-content: space-around;
+}
+.login__heading {
+  font-size: 2rem;
 }
