@@ -19,9 +19,16 @@ function Login(props) {
             type="password"
             placeholder="password"
           ></input>
-          <button className="btn btn--primary btn--login" type="button">
+          <button
+            onClick={e => props.setInvalidLogin(true)}
+            className="btn btn--primary btn--login"
+            type="button"
+          >
             Login
           </button>
+          {props.invalidLogin && (
+            <p className="login__error">Invalid username and/or password</p>
+          )}
           <h2 className="login__heading">New here?</h2>
           <button
             type="button"

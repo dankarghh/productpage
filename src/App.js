@@ -12,10 +12,12 @@ import Login from "./components/Login";
 function App() {
   const [login, setLogin] = useState(false);
   const [signUp, setSignUp] = useState(false);
+  const [invalidLogin, setInvalidLogin] = useState(false);
 
   function handleCloseModal() {
     setLogin(false);
     setSignUp(false);
+    setInvalidLogin(false);
   }
 
   return (
@@ -23,7 +25,13 @@ function App() {
       {login ? (
         <div className="App-cover" onClick={handleCloseModal}></div>
       ) : null}
-      <Login login={login} signUp={signUp} setSignUp={setSignUp} />
+      <Login
+        login={login}
+        signUp={signUp}
+        setSignUp={setSignUp}
+        invalidLogin={invalidLogin}
+        setInvalidLogin={setInvalidLogin}
+      />
       <Header setLogin={setLogin} />
       <Hero setLogin={setLogin} />
       <Features />
