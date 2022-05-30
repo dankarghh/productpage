@@ -1,4 +1,5 @@
 import React from "react";
+import "animate.css";
 
 export default function Header(props) {
   return (

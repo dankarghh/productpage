@@ -2,7 +2,11 @@ import React from "react";
 
 function Login(props) {
   return (
-    <div className={props.login ? "login" : "hidden"}>
+    <div
+      className={
+        props.login ? "login animate__animated animate__fadeIn" : "hidden"
+      }
+    >
       {props.signUp ? (
         <form className="login__form">
           <h2 className="login__heading--no">
